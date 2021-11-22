@@ -9,4 +9,25 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="MyMeetings">My Meetings</string>
+    <string name="Welcome">Welcome Back!</string>
+    <string name="filterButton">Filter</string>
+    <string name="endText">---------------------------------------- END ----------------------------------------</string>
+    <string name="EditMeeting">Edit Meeting</string>
+    <string name="AddNewMeeting">DONE</string>
+    <string name="NewMeeting">Meeting Name</string>
+    <string name="notes">Notes</string>
+    <string name="attendees">Attendees</string>
+    <string name="date">Date (yyyy/mm/dd)</string>
+    <string name="time">Time (i.e.: 23:59)</string>
+    <string name="location">Location</string>
+    <string name="priority">Priority</string>
+    <string name="type">Type</string>
+    <string name="none">None</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="information">Information</string>
+    <string name="discussion">Discussion</string>
+    <string name="permission">Permission</string>
 </resources>
