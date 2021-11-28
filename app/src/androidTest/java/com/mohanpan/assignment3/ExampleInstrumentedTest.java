@@ -1,4 +1,4 @@
-package com.mohanpan.assign3;
+package com.mohanpan.assignment3;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.mohanpan.assign3", appContext.getPackageName());
+        assertEquals("com.mohanpan.assignment3", appContext.getPackageName());
     }
 }

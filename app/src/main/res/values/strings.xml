@@ -1,25 +1,16 @@
 <resources>
-    <string name="app_name">Assign3</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="MyMeetings">My Meetings</string>
-    <string name="Welcome">Welcome Back!</string>
-    <string name="filterButton">Filter</string>
-    <string name="endText">---------------------------------------- END ----------------------------------------</string>
-    <string name="EditMeeting">Edit Meeting</string>
-    <string name="AddNewMeeting">DONE</string>
-    <string name="NewMeeting">Meeting Name</string>
-    <string name="notes">Notes</string>
-    <string name="attendees">Attendees</string>
-    <string name="date">Date (yyyy/mm/dd)</string>
-    <string name="time">Time (i.e.: 23:59)</string>
+    <string name="app_name">Assignment3</string>
+    <string name="welcomeText">Welcome back!</string>
+    <string name="meetingMainTitle">My Meetings</string>
+    <string name="filterButton" />
+    <string name="whenNoMeeting">Oops, there is no meeting to show...</string>
+    <string name="newMeeting">New Meeting</string>
+    <string name="cancelButton">x</string>
+    <string name="newMeetingName">New Meeting</string>
+    <string name="notesDetail">Notes</string>
+    <string name="attendeesDetails">Attendees</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
     <string name="location">Location</string>
     <string name="priority">Priority</string>
     <string name="type">Type</string>
@@ -30,4 +21,13 @@
     <string name="information">Information</string>
     <string name="discussion">Discussion</string>
     <string name="permission">Permission</string>
+    <string name="done">DONE</string>
+
+    <string-array name="filter_categories">
+        <item>Filter</item>
+        <item>Contents</item>
+        <item>Date</item>
+        <item>Location</item>
+        <item>Priority</item>
+    </string-array>
 </resources>

@@ -1,4 +1,4 @@
-package com.mohanpan.assign3;
+package com.mohanpan.assignment3;
 
 import org.junit.Test;
 
