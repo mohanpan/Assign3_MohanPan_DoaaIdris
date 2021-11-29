@@ -37,14 +37,6 @@
             android:text="@string/meetingMainTitle"
             android:textSize="24sp" />
 
-        <ImageButton
-            android:id="@+id/filterImageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:contentDescription="@string/filterButton"
-            android:src="@drawable/android___button" />
-
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,39 +44,23 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Spinner
-                    android:id="@+id/filterSpinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:entries="@array/filter_categories"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="match_parent"/>
         </androidx.cardview.widget.CardView>
 
-        <LinearLayout
-            android:id="@+id/meetingField"
+        <ListView
+            android:id="@+id/meetingList"
             android:layout_width="match_parent"
-            android:layout_height="315dp"
-            android:orientation="vertical">
+            android:layout_height="354dp"
+            android:layout_marginTop="40px">
 
-            <TextView
-                android:id="@+id/noMeetingText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="@string/whenNoMeeting" />
-        </LinearLayout>
+        </ListView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addNewMeeting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_margin="16dp"
+            android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/add"

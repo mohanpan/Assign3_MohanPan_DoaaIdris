@@ -2,16 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/addNewMeetingLayout"
+        android:id="@+id/updateMeetingLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:background="#CCCCCC"
         android:orientation="vertical"
@@ -20,32 +19,51 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/title"
+            android:id="@+id/updateMeetingTitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:background="#0D71EC"
             android:orientation="horizontal">
 
+            <ImageButton
+                android:id="@+id/backBtn2"
+                android:layout_width="36dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="7px"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/back_button"
+                android:tint="#FFFFFF" />
+
             <TextView
-                android:id="@+id/NewMeeting"
-                android:layout_width="330dp"
+                android:id="@+id/updateMeetingText"
+                android:layout_width="291dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@string/newMeeting"
+                android:text="Update Meeting"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/cancel"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/deleteBtn"
+                android:layout_width="36dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="7px"
                 android:layout_weight="1"
-                android:background="#0D71EC"
-                android:text="@string/cancelButton"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:background="?selectableItemBackgroundBorderless"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/garbage_icon"
+                android:tint="#FFFFFF" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -65,48 +83,42 @@
                 android:background="#F4F4F4">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/nameDetail"
+                    android:id="@+id/updateMeeting"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/newMeetingName"
-                    android:inputType="textShortMessage"
-                    android:textSize="18sp"
+                    android:hint="@string/newMeeting"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/notesName"
+                android:id="@+id/noteDetail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#F4F4F4">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/notesDetail"
+                    android:id="@+id/updateNote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/notesDetail"
-                    android:inputType="textLongMessage"
-                    android:textSize="14sp" />
+                    android:hint="@string/notesDetail" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/attendeesName"
+                android:id="@+id/attendeesDetail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#F4F4F4">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/attendeesDetail"
+                    android:id="@+id/updateAttendees"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/attendeesDetails"
-                    android:inputType="textPersonName"
-                    android:textSize="14sp" />
+                    android:hint="@string/attendeesDetails" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/meetingDateTime"
+            android:id="@+id/meetingDateAndTimeDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -122,34 +134,30 @@
                 android:background="#F4F4F4">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/dateDetail"
+                    android:id="@+id/updateDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/date"
-                    android:inputType="date"
-                    android:textSize="14sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/meetingTime"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#F4F4F4">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/timeDetail"
+                    android:id="@+id/updateTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/time"
-                    android:inputType="time"
-                    android:textSize="14sp"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/meetingLocationDetail"
+            android:id="@+id/meetingLocationDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -161,16 +169,39 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/meetingLocation"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#F4F4F4">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/locationDetail"
+                    android:id="@+id/updateLocation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/location"
-                    android:inputType="textPostalAddress"
-                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/meetingNotificationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/meetingNotification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F4F4F4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/updateNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Set Notification"
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -195,7 +226,7 @@
 
                 <TextView
                     android:id="@+id/meetingPriority"
-                    android:layout_width="50dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -232,9 +263,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/high" />
-
                 </RadioGroup>
-
             </LinearLayout>
 
             <LinearLayout
@@ -247,7 +276,7 @@
 
                 <TextView
                     android:id="@+id/meetingType"
-                    android:layout_width="40dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -262,25 +291,24 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/informationButton"
+                        android:id="@+id/workButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/information" />
+                        android:text="Work" />
 
                     <RadioButton
-                        android:id="@+id/discussionButton"
+                        android:id="@+id/schoolButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/discussion" />
+                        android:text="School" />
 
                     <RadioButton
-                        android:id="@+id/permissionButton"
+                        android:id="@+id/otherButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/permission" />
+                        android:text="Other" />
                 </RadioGroup>
             </LinearLayout>
-
         </LinearLayout>
 
         <LinearLayout
@@ -295,12 +323,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0D71EC"
-                android:text="@string/done"
+                android:text="Update Meeting"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     <string name="meetingMainTitle">My Meetings</string>
     <string name="filterButton" />
     <string name="whenNoMeeting">Oops, there is no meeting to show...</string>
-    <string name="newMeeting">New Meeting</string>
+    <string name="newMeeting">Add a New Meeting</string>
     <string name="cancelButton">x</string>
     <string name="newMeetingName">New Meeting</string>
     <string name="notesDetail">Notes</string>
@@ -18,10 +18,10 @@
     <string name="low">Low</string>
     <string name="medium">Medium</string>
     <string name="high">High</string>
-    <string name="information">Information</string>
-    <string name="discussion">Discussion</string>
-    <string name="permission">Permission</string>
-    <string name="done">DONE</string>
+    <string name="information">Work</string>
+    <string name="discussion">School</string>
+    <string name="permission">Other</string>
+    <string name="done">Add Meeting</string>
 
     <string-array name="filter_categories">
         <item>Filter</item>
